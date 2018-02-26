@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context="kenya.pl.com.sgr.Payment">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/pay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:text="Pay KES 400" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/textView3"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:text="Enter your phone number!" />
+
+    <View
+        android:id="@+id/textView5"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textView4"
+        android:text="Book now"
+        android:background="#000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+
+        android:gravity="center"
+        android:hint="Phone number"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#fff"
+        android:text="Complete transaction!"
+        android:layout_below="@+id/editText7"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
